@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "NyghtDarkI";
+    src:url("./assets/fonts/NyghtSerifDarkItalic.otf") format("opentype");
+    font-style: italic;}
+@font-face {
+    font-family: "OakMedI";
+    src:url("./assets/fonts/OakSansMediumItalic.ttf") format("truetype");
+    font-style: italic;}
+@font-face {
+    font-family: "OakBoldI" ;
+    src: url("./assets/fonts/OakSansBoldItalic.ttf");
+    font-style: bold;}
+
+header {display: flex; background-color: #100E19; justify-content:space-between; margin-bottom: 10px;
+flex-wrap: wrap; flex-direction: row; text-wrap: wrap;}
+.navi {display: flex; justify-content:center;}
+.navi>div {margin-inline: 10px;}
+body{background-color: #100E19; padding-inline: 30px; margin-bottom: 10px;}
+footer {display: flex; flex-wrap:wrap; justify-content:space-between; align-items: center ;
+    align-content: 30px; margin-top: 30px}
+
+/* first part { */
+#home {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: center; flex-direction: row; padding: 10px; 
+}
+#home>img{flex: 30%; padding-inline: 10px; margin-bottom: 0px;}
+.f1 {width: 30%; border-radius: 30px;}
+#misc {display: flex; flex-wrap: nowrap; flex-direction: row; margin-top: 0;}
+#misc>div {text-anchor: middle; padding-inline: 20px;}
+
+/* second part */
+* {box-sizing:border-box}
+
+    /* Slideshow container */
+#FeaturedSlideShow {
+  max-width: 1500px;
+  position:relative;
+  margin-inline: auto;
+  margin: 0;
+}
+#FeaturedSlideShow>img {
+    border-radius: 30px;
+}
+
+.slides {
+    display: none;
+  }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+}
+
+.desc {
+  padding: 10px 12px;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: justify;
+  text-shadow: 1px 1px 7px #100E19;
+}
+.captTitle {
+    padding: 10px 12px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+    text-shadow: 1px 1px 7px #100E19;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+/* third part */
+#testimonies{display: flex; flex-wrap: wrap; margin-bottom: 30px}
+#testimonies>div{ 
+    border: 1px #E4B843;  border-style: solid; padding: 20px; justify-content: center; align-items: center
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+button {
+    background-color: #E4B843; color: aliceblue ;border-radius: 10px; border: none; padding: 5px;
+}
+#pp{
+    width: 30%;display: block; margin-inline: auto; border-radius: 50%;
+}
+

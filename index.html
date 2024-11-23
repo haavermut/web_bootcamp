@@ -5,48 +5,158 @@
      <!-- kalo mau summon external css di bag ini yes-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portofolio</title>
+    <title>WebPortoTest</title>
+    <link rel="stylesheet" href="styling.css"> 
+    <link rel="stylesheet" href="styleanimation.css">
 </head>
 <style>
-    #gallery {
-
+    h1 {
+    font-family:"NyghtDarkI"; font-size: 45px;
+    text-align: left; color: #E4B843; line-height: 0.01;
+    }
+    h2 {
+        font-family: "NyghtDarkI"; font-size: 700%;
+        line-height: 0.9; border: 5px; color: #E4B843;
+        margin-bottom: 5px;
+    }
+    h3 {
+        font-family: "NyghtDarkI"; font-size: 80px; line-height: 0.01; border: none;
+        color: aliceblue; 
+    }
+    h4 {
+        font-family: "OakBoldI"; font-size: 45px; line-height: 0.01; margin: none;
+        color: aliceblue; margin-bottom: 20px;
+    }
+    p {
+        font-family:"OakMedI"; font-size: 24px ; color: rgb(85, 86, 113); margin-bottom: 0; border: 0;
+        padding-bottom: 0; text-align: justify;
+    }
+    .desc {
+        color: aliceblue; text-shadow: #100E19;
     }
 </style>
 
+<!-- internal css position
+<style>
+    @font-face {
+        font-family: "SCon";
+        src:url("./assets/fonts/StrongConcrete-Bold.otf") format("opentype");
+        font-style: normal;
+    }
+    body {
+        background-color: #25282c;
+    }
+</style>
+-->
+
 <header>
-    <h1 style="font-size: 300%;">My Artworks</h1>
-    <button type="menu">gallery</button> <button type="menu">about</button>
+    <div><h1>Haavermut</h1></div>
+    <div class="navi">
+        <div><p class="hoverable">Home</p></div>
+        <div><p class="hoverable">Featured</p></div>
+        <div><p class="hoverable">Testimonies</p></div>
+        <div><p class="hoverable">About</p></div>
+    </div>
+    <button class="righters" type="menu">Contact Us</button>
 </header>
 
 <body>
-    <div id="gallery">
-        <img class="f1" src="./assets/images/thorns.jpg" alt="" width=400px>
-        <p>Maret 2024 </p>
-        <h3 class="artt">Thorns</h3>
-        <p class="cat">Kategori: Fanart (Arknights)</p>
-        <p class="opop">Pendapat (saya sendiri): "komposisinya agak ga pas, tapi suka cara shade-nya hehe"</p>
-    
-        <img class="f1" src="./assets/images/pudicitia.jpg" alt="" width=400px>
-        <p>-- 2022 </p>
-        <h3 class="artt">Pudicitia</h3>
-        <p class="cat">Kategori: Fanart (CRK)</p>
-        <p class="opop">Pendapat (saya sendiri): "masih suka lihat yg ini" <br></p>
-        
-    </div>
-    <section> 
-        <h2>about</h2>
-        <a href="https://bsky.app/profile/nodatabase.bsky.social">My Bluesky</a>
-    </section>
+    <div>
+    <div id="home">
+            <img class="f1" src="./assets/images/2.jpg" alt="">
+            <img class="f1" src="./assets/images/1.jpg" alt="">
+            <img class="f1" src="./assets/images/3.jpg" alt="">
+        </div>
 
-    <!-- internal js kalo di fileyg sama, external di summon di body-->
+        <div id="misc">
+            <div><h2>Lorem<br>Ipsum</h2> </div>
+            <div style="align-self: center;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> </div>
+        </div>
+    </div>
+
+    <h2 id="featured">Featured</h2>
+    <div id="FeaturedSlideShow">        
+
+        <div class="slides fade">
+            <img  src="./assets/images/4.jpg" alt="" style="width:100% ;">
+            <h3 class="captTitle">Lorem Ipsum</h3>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="slides fade">
+            <img  src="./assets/images/5.jpg" alt="" style="width:100%">
+            <h3 class="captTitle">Lorem Ipsum</h3>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="slides fade">
+            <img  src="./assets/images/6.jpg" alt="" style="width:100%">
+            <h3 class="captTitle">Lorem Ipsum</h3>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="slides fade">
+            <img  src="./assets/images/8.jpg" alt="" style="width:100%">
+            <h3 class="captTitle">Lorem Ipsum</h3>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <h2>Testimonies</h2>
+    <div id="testimonies">
+        <div class="column">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam natus omnis quos nisi reiciendis commodi molestias cupiditate dolorem repellendus eum at id, accusantium quod, aliquam ipsa exercitationem hic odit eius?</p>
+            <h4>Mary Sue</h4>
+            <p class="job">Company Manager</p>
+        </div>
+
+        <div class="column">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam natus omnis quos nisi reiciendis commodi molestias cupiditate dolorem repellendus eum at id, accusantium quod, aliquam ipsa exercitationem hic odit eius?</p>
+            <h4>John Doe</h4>
+            <p class="job">Company Manager</p>
+        </div>
+
+        <div class="column">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam natus omnis quos nisi reiciendis commodi molestias cupiditate dolorem repellendus eum at id, accusantium quod, aliquam ipsa exercitationem hic odit eius?</p>
+            <h4>Gary Stu</h4>
+            <p class="job">Company Manager</p>
+        </div>
+
+    </div>
+    <div> 
+
+
+        <div id="ppndesc"> 
+            <h2>About</h2>
+            <div><img id="pp" src="./assets/images/pp.JPG" alt=""></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae minima officia expedita, excepturi explicabo! Similique, eos rerum incidunt maiores blanditiis veniam, molestiae, consequuntur illo tempora deserunt commodi minus vitae.</p></div>
+        </div>
+
+    <script src="./js/skrip.js"></script>
+
+<!-- internal js kalo di fileyg sama, external di summon di body
+     ini buat internal script v
     <script> 
-        let aud = "pemirsa";
-        const jlh = 1;
-        alert("Halo! " +aud+ " ke-" +jlh+ "!");
-    </script>
+
+    </script> 
+    -->
 </body>
 
 <footer>
-    <p style="font-size: 11px;"> idk sih jujur coba2 -Dee</p>
+    <div><p style="text-align: left">this is a test website</p></div>
+    <div><h1>Haavermut</h1></div>
+    <div><p class="hoverable">Privacy Policy</p></div>
 </footer>
 </html>
